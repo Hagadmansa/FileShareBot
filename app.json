@@ -1,0 +1,42 @@
+{
+    "name": "File Store Bot",
+    "description": "This Bot can store anything in Telegram without any Database and that can be access by a special link.",
+    "stack": "container",
+    "keywords": [
+      "telegram",
+      "file-store-bot",
+      "telegram-bot",
+      "hagadmansa",
+      "pyrogram"
+    ],
+    "website": "https://hagadmansa.com",
+    "repository": "https://github.com/hagadmansa/FileStoreBot",
+    "env": {
+        "BOT_TOKEN": {
+            "description": "Your Telegram Bot Token, get it from @BotFather.",
+            "required": true
+        },
+        "API_ID": {
+            "description": "Your Telegram API ID, get it from https://my.telegram.org",
+            "required": true
+        },
+        "API_HASH": {
+            "description": "Your Telegram API HASH, get it from https://my.telegram.org",
+            "required": true
+        },
+        "CHANNELS": {
+            "description": "Username of your Bot, without '@'.",
+            "required": true
+        }
+    },
+    "addons": [],
+    "buildpacks": [{
+        "url": "heroku/python"
+    }],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    }
+}
