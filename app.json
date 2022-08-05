@@ -31,7 +31,7 @@
     },
     "addons": [],
     "buildpacks": [{
-        "url": "heroku/python"
+        "url": "heroku-*"
     }],
     "formation": {
         "worker": {
